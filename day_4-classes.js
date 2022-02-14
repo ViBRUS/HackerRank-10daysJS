@@ -3,14 +3,16 @@
  * 1. A constructor that takes an array of integer side lengths.
  * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
  */
-function Polygon (arr) {
-    this.arr=arr;
-    this.perimeter=perimeter;
-}
-function perimeter() {    
-    let op=0;    
-    this.arr.forEach(x => {
-        op+=x;
-    })
-    return op;
+class Polygon {
+    constructor(arr) {
+        this.arr=arr;
+    }
+    
+    perimeter() {    
+        let op=0;    
+        this.arr.forEach(x => {
+            op+=x;
+        })
+        return op;
+    }
 }
